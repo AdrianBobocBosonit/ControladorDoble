@@ -2,6 +2,7 @@ package com.bosonit.DobleControlador;
 
 import org.springframework.stereotype.Service;
 
+
 @Service
 public class PersonaServiceImpl implements PersonaService{
 
@@ -12,7 +13,6 @@ public class PersonaServiceImpl implements PersonaService{
         person.setNombre(persona.getNombre());
         person.setEdad(persona.getEdad()*2);
         person.setPoblacion(persona.getPoblacion());
-
     }
 
     @Override
