@@ -9,5 +9,4 @@ public class DobleControladorApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DobleControladorApplication.class, args);
 	}
-
 }
