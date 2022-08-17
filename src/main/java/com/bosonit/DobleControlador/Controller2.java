@@ -14,6 +14,7 @@ public class Controller2 {
     public Persona getPersona() {
 
         Persona persona = personaService.getPersona();
+        persona.setEdad(persona.getEdad()*2);
 
         System.out.println(persona.getNombre());
         System.out.println(persona.getEdad());

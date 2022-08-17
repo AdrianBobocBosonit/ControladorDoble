@@ -17,13 +17,6 @@ public class Controller1 {
     CiudadService ciudadService;
 
 
-
-    @Autowired
-    @Qualifier("creadAlinicioCiudades")
-    List<Ciudad> creadAlinicioCiudades;
-
-
-
     @GetMapping("/controlador1/addPersona")
     public void getPersona(@RequestHeader("nombre") String nombre, @RequestHeader("edad") int edad, @RequestHeader("poblacion") String poblacion) {
         System.out.println("Nombre: " + nombre);

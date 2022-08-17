@@ -1,6 +1,5 @@
 package com.bosonit.DobleControlador;
 
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +12,6 @@ public class CiudadServiceImpl implements CiudadService{
     List<Ciudad> listaCiudades = new ArrayList<>();
 
     @Bean
-    @Qualifier("creadAlinicioCiudades")
     public List<Ciudad> creadAlinicioCiudades() {
 
         Ciudad ciudad1 = new Ciudad("Pekin",1234567890);
